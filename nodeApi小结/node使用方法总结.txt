@@ -1,0 +1,48 @@
+
+1、node是什么
+    既不是语言，也不是框架，是一个平台
+
+2、node的基本特点
+    没有浏览器的BOM和DOM对象
+    有基于ECMAScript 基本的JavaScript的语言部分
+    node为JavaScript提供了一些服务器级别的 api
+        文件操作能力
+        http服务的能力
+        核心模块内容（fs,path,http...）
+
+3、node：
+    1、ECMAScript:
+        变量
+        方法
+        数据类型
+        内置对象
+        Array
+        Object
+        Date
+        Math
+
+    2、模块系统
+        在node中没有全局作用域（一个模块中的变量需要被其他模块引用，需要把需要用的变量exports出去）
+        在node中，只能通过require方法来加载执行多个js文件
+        require方法只是执行其中的代码，文件与文件之间由于是模块作用域，所以不会污染变量
+            模块是完全封闭的
+            外部无法直接访问
+            内部也无法直接访问外部
+            require方法默认返回一个{}空对象，所以可以使用exports来挂载需要对外开放的属性
+    
+    3、核心模块
+        核心模块是由Node提供的一个具名模块，并有自己的命名标识
+            fs   文件操作模块
+            http 网路服务构建模块
+            os   操作系统构建模块
+            path 路径处理模块
+
+    4、http
+        require
+        端口号
+            ip地址定位计算机
+            端口号定位具体正在执行的应用程序
+        content-type
+            文本格式的解析
+            Content-Type text/plain; charset=utf-8;
+            Content-Type text/html; charset=utf-8
