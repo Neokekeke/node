@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        name: '市中心
+        name: '市中心'
       },
       "geometry": {
         "type": "Polygon",
